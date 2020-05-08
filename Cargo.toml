@@ -50,11 +50,14 @@ default-features = false
 
 [dependencies.rand]
 version = "0.7.3"
+git = "https://github.com/akropolisio/rand"
 default-features = false
 optional = true
 
 [dependencies.rand_core]
 version = "0.5.1"
+git = "https://github.com/akropolisio/rand"
+package = 'rand_core'
 default-features = false
 
 [dependencies.getrandom]
@@ -64,6 +67,8 @@ optional = true
 
 [dependencies.rand_chacha]
 version = "0.2.1"
+git = "https://github.com/akropolisio/rand"
+package = 'rand_chacha'
 default-features = false
 optional = true
 
@@ -87,8 +92,8 @@ default-features = false
 features = ["zeroize_derive"]
 
 [dev-dependencies]
-rand = "0.7.3"
-rand_chacha = "0.2.1"
+rand = {version = "0.7.3", git = "https://github.com/akropolisio/rand"}
+rand_chacha = {version = "0.2.2", git = "https://github.com/akropolisio/rand", package = 'rand_chacha'}
 # hex = "0.3.2"
 hex-literal = "0.2.1"
 sha2 = "0.8.0"
