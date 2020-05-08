@@ -58,7 +58,7 @@ version = "0.5.1"
 default-features = false
 
 [dependencies.getrandom]
-version = "0.1.14"
+version = "0.1.7"
 default-features = false
 optional = true
 
